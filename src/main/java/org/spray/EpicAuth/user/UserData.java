@@ -1,4 +1,4 @@
-package org.spray.keyauth.user;
+package org.spray.EpicAuth.user;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

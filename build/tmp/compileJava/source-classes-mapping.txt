@@ -1,9 +1,9 @@
-org/spray/keyauth/util/HWID.java
- org.spray.keyauth.util.HWID
-org/spray/keyauth/user/UserData.java
- org.spray.keyauth.user.UserData
-org/spray/keyauth/Application.java
- org.spray.keyauth.Application
-org/spray/keyauth/api/KeyAuth.java
- org.spray.keyauth.api.KeyAuth
- org.spray.keyauth.api.KeyAuth$1
+org/spray/EpicAuth/util/HWID.java
+ org.spray.EpicAuth.util.HWID
+org/spray/EpicAuth/user/UserData.java
+ org.spray.EpicAuth.user.UserData
+org/spray/EpicAuth/Application.java
+ org.spray.EpicAuth.Application
+org/spray/EpicAuth/api/EpicAuth.java
+ org.spray.EpicAuth.api.EpicAuth
+ org.spray.EpicAuth.api.EpicAuth$1

@@ -1,4 +1,4 @@
-package org.spray.keyauth.util;
+package org.spray.EpicAuth.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

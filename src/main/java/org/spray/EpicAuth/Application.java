@@ -1,23 +1,23 @@
-package org.spray.keyauth;
+package org.spray.EpicAuth;
 
 import java.util.Scanner;
 
-import org.spray.keyauth.api.KeyAuth;
+import org.spray.EpicAuth.api.EpicAuth;
 
 public class Application {
 
 	private static String url = "https://keyauth.site/api/1.1/";
 	
-	private static String ownerid = ""; // You can find out the owner id in the profile settings keyauth.com
+	private static String ownerid = ""; // You can find out the owner id in the profile settings EpicAuth.com
 	private static String appname = ""; // Application name
 	private static String version = ""; // Application version
 
-	private static KeyAuth keyAuth = new KeyAuth(appname, ownerid, version, url);
+	private static EpicAuth EpicAuth = new EpicAuth(appname, ownerid, version, url);
 
 	public static void main(String[] args) throws InterruptedException {
-		println("KeyAuth API Example");
+		println("EpicAuth API Example");
 		println("\n\n Connecting...");
-		keyAuth.init();
+		EpicAuth.init();
 
 		println("\n\n [1] Login\n [2] Upgrade\n [3] License key only\n\n Choose option: ");
 
@@ -35,7 +35,7 @@ public class Application {
 			println("\n\n Enter password: ");
 			password = scanner.nextLine();
 
-			keyAuth.login(username, password);
+			EpicAuth.login(username, password);
 			break;
 		case 2:
 			println("\n\n Enter username: ");
@@ -43,13 +43,13 @@ public class Application {
 			println("\n\n Enter license key: ");
 			key = scanner.nextLine();
 
-			keyAuth.upgrade(username, key);
+			EpicAuth.upgrade(username, key);
 			break;
 		case 3:
 			println("\n\n Enter license key: ");
 			key = scanner.nextLine();
 
-			keyAuth.license(key);
+			EpicAuth.license(key);
 			break;
 		default:
 			println("\n\n Invalid Selection");

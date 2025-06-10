@@ -35,7 +35,7 @@ dependencies {
 }
 
 application {
-    mainClassName = 'org.spray.keyauth.Application'
+    mainClassName = 'org.spray.EpicAuth.Application'
 }
 
 test {

@@ -1,11 +1,11 @@
-package org.spray.keyauth.api;
+package org.spray.EpicAuth.api;
 
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.json.JSONObject;
-import org.spray.keyauth.user.UserData;
-import org.spray.keyauth.util.HWID;
+import org.spray.EpicAuth.user.UserData;
+import org.spray.EpicAuth.util.HWID;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -17,7 +17,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 import java.security.cert.X509Certificate;
 
-public class KeyAuth {
+public class EpicAuth {
 
 	public final String appname;
 	public final String ownerid;
@@ -29,7 +29,7 @@ public class KeyAuth {
 
 	protected UserData userData;
 
-	public KeyAuth(String appname, String ownerid, String version, String url) {
+	public EpicAuth(String appname, String ownerid, String version, String url) {
 		this.appname = appname;
 		this.ownerid = ownerid;
 		this.version = version;
@@ -76,7 +76,7 @@ public class KeyAuth {
 			try {
 				JSONObject responseJSON = new JSONObject(response.getBody());
 
-				if (response.getBody().equalsIgnoreCase("KeyAuth_Invalid")) {
+				if (response.getBody().equalsIgnoreCase("EpicAuth_Invalid")) {
 					// Calling the method with a disabled connection
 					// System.exit(0);
 					System.out.println("invalid");

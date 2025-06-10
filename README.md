@@ -1,10 +1,10 @@
-# KeyAuth-JAVA-API
+# EpicAuth-JAVA-API
 
-KeyAuth Java Api/Example for For The https://keyauth.com Authentication system.
+EpicAuth Java Api/Example for For The https://EpicAuth.com Authentication system.
 
 I decided to make an api for java simply because there were none
 
-Example that I used - [KeyAuth-CSHARP-Example](https://github.com/KeyAuth/KeyAuth-CSHARP-Example)
+Example that I used - [EpicAuth-CSHARP-Example](https://github.com/EpicAuth/EpicAuth-CSHARP-Example)
 
 **Information**
 
