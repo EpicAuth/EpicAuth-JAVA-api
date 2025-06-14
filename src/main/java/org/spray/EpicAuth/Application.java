@@ -6,7 +6,7 @@ import org.spray.EpicAuth.api.EpicAuth;
 
 public class Application {
 
-	private static String url = "https://keyauth.site/api/1.1/";
+	private static String url = "https://EpicAuth.cc/api/1.1/";
 	
 	private static String ownerid = ""; // You can find out the owner id in the profile settings EpicAuth.com
 	private static String appname = ""; // Application name
