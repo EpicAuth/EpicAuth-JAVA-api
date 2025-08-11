@@ -124,6 +124,10 @@ public class EpicAuth {
 				if (!responseJSON.getBoolean("success")) {
 					System.out.println("Error");
 					// System.exit(0);
+				}else if (responseJSON.getString("message").equalsIgnoreCase("invalidver")) {
+					// Calling the method with a disabled version
+					// System.out.println(reponseJSON.getString("download"));
+
 				} else {
 					userData = new UserData(responseJSON);
 
@@ -190,6 +194,10 @@ public class EpicAuth {
 				if (!responseJSON.getBoolean("success")) {
 					System.out.println("the license does not exist");
 					// System.exit(0);
+				}else if (responseJSON.getString("message").equalsIgnoreCase("invalidver")) {
+					// Calling the method with a disabled version
+					// System.out.println(reponseJSON.getString("download"));
+
 				} else {
 					userData = new UserData(responseJSON);
 					
